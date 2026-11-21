@@ -6,7 +6,7 @@
 </head>
 <body>
     <div class="box">
-        <h2 style="text-align: center;">Регистрация</h2>
+        <h2 style="text-align: left;">Регистрация</h2>
 
         {% with messages = get_flashed_messages() %}
           {% if messages %}
@@ -22,7 +22,7 @@
             <input type="password" name="password" placeholder="Пароль" required>
             <button type="submit">Создать аккаунт</button>
         </form>
-        <p style="text-align: center; font-size: 14px;">
+        <p style="text-align: left; font-size: 14px;">
             Уже есть аккаунт? <a href="{{ url_for('login') }}">Войти</a>
         </p>
     </div>
